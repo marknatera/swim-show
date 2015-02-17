@@ -1,2 +1,76 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="front-header" role="banner">
+  <div class="container">
+    <div class="col-sm-12 col-md-12 clearfix">
+      <div class="top">
+        <h1 class="title">GET READY...</h1>
+        <h1 class="date">JULY 18-21</h1>
+        <div class="detail-button">
+          <a href="#pero-loco" class="btn scrolling-btn">Learn More</a>
+        </div>
+      </div>
+    </div> <!-- end col-sm-10 -->
+  </div>	<!-- end container -->
+</section>
+
+<section class="home-days" id="pero-loco">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h1>Days of Our SwimShow Lives</h1>
+        <%= image_tag 'play.svg' %>
+        <p>Take a quick peek and reminisce on your event packed days<br>at the SwimShow & LingerieShow!!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-member">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2>Are You In?</h2>
+        <h3>MIAMI BEACH INcard</h3>
+        <p>Get your Miami Beach INcard FREE TODAY at mbincard.com</p>
+          <a href="#" class="btn btn-member">Get Now</a>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <%= image_tag 'member.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTER -->
+<section class="section-counter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Get Ready for July 18 - 21</h2>
+      </div>
+    </div>
+    <div class="counter-wrap col-sm-12">
+      <div class="col-sm-6 col-md-3">
+        <p class="counter-number">217</p>
+        <h6 class="sub-info">Months</h6>
+      </div> <!-- end col-sm-3 -->
+      <div class="col-sm-6 col-md-3">
+        <p class="counter-number">365</p>
+        <h6 class="sub-info">Days</h6>
+      </div> <!-- end col-sm-3 -->
+      <div class="col-sm-6 col-md-3">
+        <p class="counter-number">403</p>
+        <h6 class="sub-info">Hours</h6>
+      </div> <!-- end col-sm-3 -->
+      <div class="col-sm-6 col-md-3">
+        <p class="counter-number">189</p>
+        <h6 class="sub-info">Seconds</h6>
+      </div> <!-- end col-sm-3 -->
+    </div> <!-- end counter-wrap -->
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="top-headline">
+        <h3><em>...enjoy the <strong>SWIM!</strong></em></h3>
+      </div> <!-- end headline -->
+    </div> <!-- end col-sm-8 -->
+  </div> <!-- end container -->
+</section>
+  <!-- END COUNTER -->

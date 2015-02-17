@@ -1,2 +1,168 @@
+$lato: 'Lato', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+@import "background";
+@import "ytplayer";
+@import "style";
+
+
+body{
+  padding-top:60px;
+}
+p {
+  font-family: $lato;
+}
+h6 {
+  font-size: 15px;
+  font-weight: 300;
+}
+footer {
+  background: #303030;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  p {
+    padding: 20px 0px;
+    margin: 0 0 0px;
+    font-weight: 300;
+  }
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #9B9B9B;
+    }
+  }
+  .social {
+    padding: 0px 10px;
+  }
+  .social-last {
+    padding: 0px 0px 0px 10px;
+  }
+}
+
+// Custom code for interior pages
+// Lets start with the home page
+
+.front-header {
+  background: url(image-path("background-1.jpg")) repeat-y center bottom;
+  max-width: 100%;
+  min-height: 570px;
+  position: relative;
+  overflow-y: hidden;
+  .top {
+    padding-top: 25%;
+  }
+  .title{
+    font-family: $playfair;
+  }
+  .date {
+    font-family: $lato;
+  }
+  h1 {
+    font-size: 70px !important;
+  }
+}
+
+.navbar-inverse {
+  background-color: #ffffff;
+  border-color: rgba(0,0,0,0.1);
+}
+.navbar-brand{
+  padding: 15px 20px;
+  width: 220px;
+  height: auto;
+}
+
+.navbar-nav {
+  float: right;
+  padding: 13px 40px 0px;
+  li > a {
+    color: #000000 !important;
+    padding-bottom: 28px;
+    font-family: $lato;
+    font-weight: 300;
+    &:hover{
+      border-bottom: #ec816f solid;
+    }
+  }
+}
+.home-days {
+  padding: 200px 0px;
+  background: #808080;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  h1 {
+    font-family:$playfair;
+    color: #ffffff;
+  }
+  p{
+    font-weight: 300;
+    color: #ffffff;
+  }
+  img {
+    width: 200px;
+    padding: 30px;
+  }
+}
+.home-member{
+  padding: 200px 0px;
+  background: #ffffff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  h2 {
+    font-family:$playfair;
+    color: #303030;
+  }
+  h3{
+    font-family:$lato;
+  }
+  p {
+    font-weight: 300;
+    color: #303030;
+    padding: 30px 0px;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  .btn-member {
+    @extend .btn-success;
+    color: #303030;
+    background-color: transparent;
+    border-color: #303030;
+    font-family: $lato;
+    border-radius: 3px;
+    padding: 5px 25px;
+    font-weight: 300;
+    &:hover, &:active {
+      background: #303030;
+      color: #ffffff;
+      border-color: #303030;
+    }
+  }
+}
+.section-counter {
+  h2 {
+    color: #ffffff;
+    font-family: $playfair;
+    font-size: 50px !important;
+  }
+  h3 {
+    color: #ffffff;
+    font-family: $lato;
+    font-size: 40px !important;
+    font-weight: 300;
+  }
+  h6 {
+    margin-bottom: 50px;
+  }
+}

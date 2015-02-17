@@ -15,3 +15,37 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+//= require freetile
+//= require html5.js
+//= require smoothscroll
+//= require teamslider
+//= require swiper
+//= require isotope
+//= require verticalslider
+//= require ytplayer
+//= require timelinr
+//= require magnific-popup
+//= require counterup
+//= require cloudflare
+//= require parallax
+//= require fittext
+//= require map.js
+//= require function.js
+
+// Everything custom down here
+
+// Scroll Function
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
