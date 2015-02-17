@@ -2,10 +2,9 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
+  get '/swimshow' => 'pages#swimshow'
   get 'pages/about'
-
   get 'pages/dates'
-
   get 'pages/events'
 
   # The priority is based upon order of creation: first created -> highest priority.

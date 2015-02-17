@@ -13,6 +13,18 @@ $playfair: 'Playfair Display', serif;
 @import "style";
 
 
+/************************************************************************************
+
+Table of contents for my custom stuff:
+
+1. Everything Global
+2. Home Page
+3. Swimshow Page
+
+************************************************************************************/
+
+// 1. This Global Homie
+
 body{
   padding-top:60px;
 }
@@ -47,28 +59,6 @@ footer {
   }
 }
 
-// Custom code for interior pages
-// Lets start with the home page
-
-.front-header {
-  background: url(image-path("background-1.jpg")) repeat-y center bottom;
-  max-width: 100%;
-  min-height: 570px;
-  position: relative;
-  overflow-y: hidden;
-  .top {
-    padding-top: 25%;
-  }
-  .title{
-    font-family: $playfair;
-  }
-  .date {
-    font-family: $lato;
-  }
-  h1 {
-    font-size: 70px !important;
-  }
-}
 
 .navbar-inverse {
   background-color: #ffffff;
@@ -93,6 +83,48 @@ footer {
     }
   }
 }
+
+.btn-member {
+  @extend .btn-success;
+  color: #303030;
+  background-color: transparent;
+  border-color: #303030;
+  font-family: $lato;
+  border-radius: 3px;
+  padding: 5px 25px;
+  font-weight: 300;
+  &:hover, &:active, &:focus {
+    background: #303030;
+    color: #ffffff;
+    border-color: #303030;
+  }
+}
+
+
+// Custom code for interior pages
+// Lets start with the home page
+// 2. El Home
+.front-header {
+  background: url(image-path("background-1.jpg")) repeat-y center bottom;
+  max-width: 100%;
+  min-height: 570px;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  .top {
+    padding-top: 25%;
+  }
+  .title{
+    font-family: $playfair;
+  }
+  .date {
+    font-family: $lato;
+  }
+  h1 {
+    font-size: 70px !important;
+  }
+}
+
 .home-days {
   padding: 200px 0px;
   background: #808080;
@@ -112,6 +144,7 @@ footer {
     padding: 30px;
   }
 }
+
 .home-member{
   padding: 200px 0px;
   background: #ffffff;
@@ -134,21 +167,6 @@ footer {
     margin: 0 auto;
     display: block;
   }
-  .btn-member {
-    @extend .btn-success;
-    color: #303030;
-    background-color: transparent;
-    border-color: #303030;
-    font-family: $lato;
-    border-radius: 3px;
-    padding: 5px 25px;
-    font-weight: 300;
-    &:hover, &:active {
-      background: #303030;
-      color: #ffffff;
-      border-color: #303030;
-    }
-  }
 }
 .section-counter {
   h2 {
@@ -164,5 +182,70 @@ footer {
   }
   h6 {
     margin-bottom: 50px;
+  }
+}
+
+// 3. Swimshow Page
+.swim-header {
+  @extend .front-header;
+  background: url(image-path("background-swimshow.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100% !important;
+  padding: 50px 0px;
+  h1 {
+    padding: 0 0 5%;
+    font-family: $playfair;
+    font-size: 40px !important;
+    color: #4d4a4a;
+  }
+  h2 {
+    font-size: 20px !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4d4a4a;
+  }
+  h3 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: #4d4a4a;
+  }
+  h4 {
+    font-size: 15px !important;
+    font-weight: 300;
+    color: #4d4a4a;
+  }
+  p {
+    color: #4d4a4a;
+    font-weight: 300;
+    padding: 1% 0;
+  }
+}
+
+.swim-sect-2 {
+  @extend .swim-header;
+  background: url(image-path("background-swim2.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 0px 120px;
+  h1 {
+    padding: 0;
+  }
+  h3 {
+    padding: 0 0 5%;
+  }
+}
+.swim-sect-3 {
+  padding: 100px 0px 120px;
+  background: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  h1 {
+    font-family: $playfair;
+    font-size: 40px !important;
+    color: #4d4a4a;
+    padding-bottom: 20px;
+
   }
 }
