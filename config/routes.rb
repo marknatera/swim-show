@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/exhibitors' => 'pages#exhibitors'
   get '/retailers' => 'pages#retailers'
   get '/media' => 'pages#media'
+  get '/travel' => 'pages#travel'
   get 'pages/about'
   get 'pages/dates'
   get 'pages/events'

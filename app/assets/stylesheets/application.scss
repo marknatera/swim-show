@@ -25,6 +25,7 @@ Table of contents for my custom stuff:
 6. Exhibitors
 7. Retailers Page
 8. Media Page
+9. Travel Page
 
 ************************************************************************************/
 
@@ -35,6 +36,7 @@ body{
 }
 p {
   font-family: $lato;
+  font-weight: 300;
 }
 h6 {
   font-size: 15px;
@@ -64,6 +66,15 @@ footer {
   }
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.paraeltop {
+  padding-top:15px;
+}
 
 .navbar-inverse {
   background-color: #ffffff;
@@ -122,6 +133,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .pre-registration {
     @extend .swim-sect-3;
     background: #f7f7f7 !important;
+}
+
+.delimiter{padding-top:50px;}
+
+.rightb {
+  border-right: #e1e1e1 solid 1px;
 }
 
 // Custom code for interior pages
@@ -427,7 +444,40 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding-left: 15px;
     list-style-type: decimal;
   }
-  .rightb {
-    border-right: #e1e1e1 solid 1px;
+}
+
+// 9. Travel Page
+.location {
+  @extend .dates-btm;
+  padding: 50px 0;
+  p {
+    font-weight: 300;
+  }
+}
+
+.travel-directions {
+  background: #f7f7f7;
+  padding: 50px 0 75px;
+  h2 {
+    font-family: $playfair;
+    text-align: center;
+  }
+}
+.travel-content {
+  @extend .retailer-content;
+  text-align: center;
+  .delimiter {
+    padding-top:200px;
+  }
+  h2 {
+    font-family: $playfair;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    border: #f7f7f7 solid 15px;
   }
 }
