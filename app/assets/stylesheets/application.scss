@@ -366,6 +366,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 // 7. Retailers Page
+
 .retailers-head {
   @extend .showdates-head;
   background: url(image-path("retailers.jpg")) repeat-y center bottom;
@@ -378,4 +379,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   .top {
     padding-top: 50%;
   }
+}
+.retailer-content {
+  padding: 150px 0;
+  ul, li {
+    padding-left: 15px;
+    list-style-type: circle;
+  }
+}
+.pre-registration {
+    @extend .swim-sect-3;
+    background: #f7f7f7;
 }
