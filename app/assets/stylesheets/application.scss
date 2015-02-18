@@ -24,6 +24,7 @@ Table of contents for my custom stuff:
 5. Special Events
 6. Exhibitors
 7. Retailers Page
+8. Media Page
 
 ************************************************************************************/
 
@@ -118,7 +119,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     border-color: #303030;
   }
 }
-
+.pre-registration {
+    @extend .swim-sect-3;
+    background: #f7f7f7 !important;
+}
 
 // Custom code for interior pages
 // Lets start with the home page
@@ -387,7 +391,43 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     list-style-type: circle;
   }
 }
-.pre-registration {
-    @extend .swim-sect-3;
-    background: #f7f7f7;
+
+// 8. Media Page
+
+.media-head {
+  @extend .showdates-head;
+  background: url(image-path("media-head.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 50%;
+  }
+}
+.media-content {
+  @extend .retailer-content;
+  ul, li {
+    padding-left: 15px;
+    list-style-type: decimal;
+  }
+  .space {
+    padding-top: 50px;
+  }
+}
+.media-content-2 {
+  padding: 0 0 150px;
+  h2 {
+    font-family: $playfair;
+    padding-bottom: 50px;
+  }
+  ul, li {
+    padding-left: 15px;
+    list-style-type: decimal;
+  }
+  .rightb {
+    border-right: #e1e1e1 solid 1px;
+  }
 }

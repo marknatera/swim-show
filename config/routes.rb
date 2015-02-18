@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/special-events' => 'pages#special-events'
   get '/exhibitors' => 'pages#exhibitors'
   get '/retailers' => 'pages#retailers'
+  get '/media' => 'pages#media'
   get 'pages/about'
   get 'pages/dates'
   get 'pages/events'
