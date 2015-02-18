@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get '/swimshow' => 'pages#swimshow'
+  get '/show-dates' => 'pages#showdates'
   get 'pages/about'
   get 'pages/dates'
   get 'pages/events'
