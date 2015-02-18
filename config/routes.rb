@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   get '/swimshow' => 'pages#swimshow'
   get '/show-dates' => 'pages#showdates'
+  get '/special-events' => 'pages#special-events'
+  get '/exhibitors' => 'pages#exhibitors'
+  get '/retailers' => 'pages#retailers'
   get 'pages/about'
   get 'pages/dates'
   get 'pages/events'

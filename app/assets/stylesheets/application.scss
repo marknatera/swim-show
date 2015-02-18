@@ -21,6 +21,9 @@ Table of contents for my custom stuff:
 2. Home Page
 3. Swimshow Page
 4. Show Dates
+5. Special Events
+6. Exhibitors
+7. Retailers Page
 
 ************************************************************************************/
 
@@ -270,16 +273,17 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 4. Show Dates
 .showdates-head {
   background: url(image-path("showdates.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
   max-width: 100%;
-  min-height: 570px;
   background-size: cover;
   position: relative;
   overflow-y: hidden;
   text-align: center;
+  height: 100vh;
   .top {
     padding-top: 45%;
   }
-  h1 {font-family: $playfair;}
+  h1 {font-family: $playfair;font-size: 70px !important;}
   p {font-size: 16px;font-weight: 300;}
 }
 
@@ -301,4 +305,77 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .dates-btm {
   @extend .swim-sect-3;
+}
+
+// 5. Special Events
+.special-head {
+  @extend .showdates-head;
+  background: url(image-path("special-events.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 15%;
+  }
+}
+.special-events {
+  padding: 150px 0;
+  h1 {
+    font-family: $playfair;
+    font-size: 30px !important;
+    text-align: center;
+  }
+  p {
+    font-weight: 300;
+    text-align: center;
+  }
+  .box {
+    padding: 80px 0;
+    .btn-member {
+      margin: 0 auto;
+      display: block;
+      width: 170px;
+      padding: 5px 0px;
+    }
+    ul {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+}
+
+// 6. Exhibitors
+.exhibitors-head {
+  @extend .showdates-head;
+  background: url(image-path("exhibitors.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 50%;
+  }
+}
+
+// 7. Retailers Page
+.retailers-head {
+  @extend .showdates-head;
+  background: url(image-path("retailers.jpg")) repeat-y center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  height: 100vh;
+  .top {
+    padding-top: 50%;
+  }
 }
