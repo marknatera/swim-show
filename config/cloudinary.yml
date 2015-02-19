@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hjkd1xom6
+  api_key: '442142349762636'
+  api_secret: FIx11hA462qRIKA3Je3-GzH-CxI
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hjkd1xom6
+  api_key: '442142349762636'
+  api_secret: FIx11hA462qRIKA3Je3-GzH-CxI
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hjkd1xom6
+  api_key: '442142349762636'
+  api_secret: FIx11hA462qRIKA3Je3-GzH-CxI
+  enhance_image_tag: true
+  static_image_support: false

@@ -40,6 +40,7 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 # Upload Files
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.0.4'
+gem 'cloudinary'
 
 # Backend
 gem 'devise', '~> 3.4.1'
@@ -66,4 +67,3 @@ group :production do
   gem 'pg', '~> 0.18.1'
   gem 'rails_12factor', '~> 0.0.3'
 end
-
