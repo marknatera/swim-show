@@ -140,7 +140,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // Lets start with the home page
 // 2. El Home
 .front-header {
-  background: url(image-path("background-1.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-1.jpg) repeat-y center bottom;
   max-width: 100%;
   min-height: 570px;
   background-size: cover;
@@ -224,7 +224,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 3. Swimshow Page
 .swim-header {
   @extend .front-header;
-  background: url(image-path("background-swimshow.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-swimshow.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   height: 100% !important;
@@ -260,7 +260,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .swim-sect-2 {
   @extend .swim-header;
-  background: url(image-path("background-swim2.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/background-swim2.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   padding: 100px 0px 120px;
@@ -288,7 +288,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 // 4. Show Dates
 .showdates-head {
-  background: url(image-path("showdates.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/showdates.jpg) repeat-y center bottom;
   background-attachment: fixed;
   max-width: 100%;
   background-size: cover;
@@ -323,7 +323,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 5. Special Events
 .special-head {
   @extend .showdates-head;
-  background: url(image-path("special-events.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/special-events.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -366,7 +366,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 // 6. Exhibitors
 .exhibitors-head {
   @extend .showdates-head;
-  background: url(image-path("exhibitors.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/exhibitors.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -382,7 +382,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .retailers-head {
   @extend .showdates-head;
-  background: url(image-path("retailers.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/retailers.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -405,7 +405,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .media-head {
   @extend .showdates-head;
-  background: url(image-path("media-head.jpg")) repeat-y center bottom;
+  background: url(https://s3.amazonaws.com/swim-show/Website+Images/media-head.jpg) repeat-y center bottom;
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
