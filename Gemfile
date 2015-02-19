@@ -40,7 +40,6 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 # Upload Files
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.0.4'
-gem 'cloudinary'
 
 # Backend
 gem 'devise', '~> 3.4.1'
