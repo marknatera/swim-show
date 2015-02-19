@@ -35,7 +35,7 @@
 <section class="travel-content">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6 vcenter">
+      <div class="col-sm-12 col-md-6">
         <h2>Hotels</h2>
         <p>Please contact the SAF office directly</p>
         <p><strong>Phone: 305.596.7889<br>Fax: 305.596.7713<br>E-mail: info@swimshow.com</strong></p>
@@ -43,12 +43,12 @@
         <p>Please do not book through any hotel booking agencies that contact you<br>directly stating they are working with this association.</p>
         <p>We do not utilize any of these services and do not recommend any of them.</p>
       </div>
-      <div class="col-sm-12 col-md-6 vcenter">
+      <div class="col-sm-12 col-md-6">
         <%= image_tag 'hotel.jpg', class: 'img-responsive' %>
       </div>
     </div>
     <div class="delimiter"></div>
-    <div class="row vcenter">
+    <div class="row">
       <div class="col-sm-12 col-md-6">
         <div>
           <%= image_tag 'restaurant.jpg', class: 'img-responsive' %>
@@ -56,10 +56,11 @@
       </div>
       <div class="col-sm-12 col-md-6">
         <div>
-          <h2>Restaurants</h2>
-          <p>Take a look at the different restaurants in Miami.</p>
-          <a href="" class="btn btn-member">View Restaurants</a>
-        </div>
+        <h2>Restaurants</h2>
+        <p>Take a look at the different restaurants in Miami.</p>
+        <br>
+        <a href="" class="btn btn-member">View Restaurants</a>
+      </div>
       </div>
     </div>
     <div class="delimiter"></div>
@@ -67,6 +68,7 @@
       <div class="col-sm-12 col-md-6">
         <h2>Miami Nightlife</h2>
         <p>Get to know some of the places around Miami to have the night of your life.</p>
+        <br>
         <a href="" class="btn btn-member">View places</a>
       </div>
       <div class="col-sm-12 col-md-6">
@@ -81,7 +83,8 @@
       <div class="col-sm-12 col-md-6">
         <h2>Transportation</h2>
         <p>Shuttle Bus Service:</p>
-        <a href="" class="btn btn-member">Current Shuttle Service</a>
+        <a href="" class="btn btn-member">Current Shuttle Service</a><%= image_path 'SwimShow-Bus-Schedule-2014-04.pdf', format: 'pdf' %>
+        <br>
         <p>Scooter Service:<br>Swimwear Association of Florida will provide free scooter transportation for those unable to walk the tradeshow. The scooters will be available at the ‘D’ hall registration area, located on the Convention Center Drive side of the building.</p>
         <p>If you would like to reserve your scooter in advance,<br>please contact the SAF office</p>
         <p><strong>Phone: 305.596.7889</strong></p>
@@ -89,25 +92,15 @@
     </div>
     <div class="delimiter"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 v-center">
         <h2>Airport Shuttle</h2>
         <p>Use Promo Code DLLLR to receive a 20% discount on airport transportation.</p>
         <br>
-        <a href="" class="btn btn-member">Super Shuttle</a>
+        <a href="http://www.supershuttle.com/default.aspx?GC=DLLLR" target="_blank" class="btn btn-member">Super Shuttle</a>
       </div>
       <div class="col-sm-12 col-md-6">
         <%= image_tag 'airport-shuttle.jpg', class: 'img-responsive' %>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
 </section>
