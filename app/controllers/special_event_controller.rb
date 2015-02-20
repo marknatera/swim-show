@@ -1,0 +1,2 @@
+class SpecialEventController < ApplicationController
+end

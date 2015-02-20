@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   def dates
   end
 
-  def events
+  def specialevents
+    @events = SpecialEvent.all
   end
 end
